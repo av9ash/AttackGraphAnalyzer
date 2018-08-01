@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700" rel="stylesheet">    
+    <style>
+    .the_body {
+        font-family: 'Raleway';
+        font-weight:400;
+        color: white;
+        margin:auto;
+        width:80%;
+        padding:30px;
+        font-size:30px;
+    }
+    h1 {
+        font-weight:600;
+        font-size: 60px;
+    }
+    input {
+        width:100%;
+    }
+    .effect-2{border: 0; padding: 10px; border-bottom: 1px solid #ccc;}
+    .effect-2 ~ .focus-border{position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background-color: #4caf50; transition: 0.4s;}
+    .effect-2:focus ~ .focus-border{width: 100%; transition: 0.4s; left: 0;}
+    </style>
+  </head>
+  <body style="background-color:#167c80;"><div class='the_body'>
+    <div class='page-header container'>
+        <div class="row">
+            <div class='col-md-4'>
+                <img src="{{ url_for('static',filename='images/header-icon.png') }}" alt="Header Icon" height="150" width="150">
+            </div>
+            <div class='col-md-8'>
+                <h1>Graph Attack</h1>
+                <h3>You provide the graph. We do the analysis.</h3>
+            </div>
+        </div>
+    </div>

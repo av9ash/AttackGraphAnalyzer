@@ -1,0 +1,33 @@
+{% include 'header.html' %}  
+    <br>
+    <div class="container">
+        <div class='row'>
+            <div class='col'>
+                <center>
+                    <img src="{{ url_for('static',filename='images/goal.png') }}" alt="Header Icon" height="100" width="100">
+                </center>
+                <br>
+                Prob. of reaching the goal state is {{prob_to_goal}}.
+            </div>
+            <div class='col'>
+                <center>
+                    <img src="{{ url_for('static',filename='images/weakness.png') }}" alt="Header Icon" height="100" width="100">
+                </center>
+                <br>
+                Removing {{worst_cve}} gives you the highest utility.
+            </div>
+            <div class='col'>
+                <center>
+                    <img src="{{ url_for('static',filename='images/gt.png') }}" alt="Header Icon" height="100" width="100">
+                </center>
+                <br>
+                Defender's dynamic strategy <a href="{{ url_for('static',filename='user_files/output_mixed_strategy.txt') }}" style="color:yellow">file</a>.
+            </div>
+            <br><br>
+            <div class='row'>
+                For details, download this &nbsp;<a href="{{ url_for('static',filename='user_files/jsonoutput.json') }}" style="color:yellow">file</a>.
+            </div>
+        </div> 
+    </div>
+  </body>
+{% include 'footer.html' %}
